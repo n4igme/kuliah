@@ -7,7 +7,7 @@ int main(){
     float pajak = 5/100;
     char jenis;
 
-    printf("Pembelian Flashdisk TOKO CICI");
+    printf("Pembelian Flashdisk TOKO CICI\n");
     cout << "Nomor Faktur : ";
     cin >> nomor_faktur;
     cout << "Nama Pembeli : ";
