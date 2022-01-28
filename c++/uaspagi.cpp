@@ -7,7 +7,7 @@ int main(){
     string nama[50];
     float nilai[50];
     string keterangan[50];
-    int totalnilai;
+    float totalnilai;
     float reratakelas;
     int i=0;
     char y;
@@ -19,6 +19,7 @@ int main(){
 
     //Input Data
     do {
+        if(i>=25) break;
         cout << "Siswa ke : " << i+1 <<endl;
         cout << "NIS : ";
         cin >> nis[i];
@@ -30,10 +31,6 @@ int main(){
         else if(nilai[i]>=70) keterangan[i] = "Baik";
         else if(nilai[i]>=60) keterangan[i] = "Cukup";
         else keterangan[i] = "Kurang";
-        
-        //force stop the loop
-        i++;
-        if(i>=5) break;
 
         cout << "Tambah data lagi? [Y/T] ";
         cin >> y;
@@ -44,6 +41,7 @@ int main(){
             case 't': isok = false; break;
             default : isok = false;
         }
+        i++;
     } while (isok);
 
     //Output Data
@@ -55,6 +53,6 @@ int main(){
         totalnilai += nilai[x];
         reratakelas = totalnilai / (x+1);
     }
-    cout << "Total Nilai" << "  " << "  " << "  " << "  " << "  " << totalnilai << endl;
-    cout << "Rerata Kelas" << "  " << "  " << "  " << "  " << "  " << reratakelas << endl;
+    cout << "Total Nilai" << "  " << "  " << "  " << "  " << totalnilai << endl;
+    cout << "Rerata Kelas" << "  " << "  " << "  " << "  " << reratakelas << endl;
 }
