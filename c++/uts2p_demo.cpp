@@ -1,48 +1,53 @@
 #include <iostream>
 using namespace std;
 int main() {
-    string mhs[45];
-    char nilai[10];
-    float ipk[45];
-    float ip[10];
-    float hitung;
+    string nama_mhs[45];
+    char nilai_abc[10];
+    float ip[45];
+    float nilai[10];
+    float sks[10];
+    float total_nilai, total_sks;
     int i=0;
     char y;
-    bool isok;
+    bool tambah;
 
-    printf("Menentukan Nilai IPK\n");
+    printf("Menentukan Indeks Prestasi Mahasiswa\n");
     
     for (int x=0; x<45; x++) {
         //masukkan data
         cout << "Masukan Data Mahasiswa ke-" << x+1 <<endl;
         cout << "Nama : ";
-        cin >> mhs[x];
+        cin >> nama_mhs[x];
         do {
             if(i>=10) break;
             cout << "Nilai Matakuliah ke-" << i+1 << " : ";
-            cin >> nilai[i];
-            if (nilai[i] == 'A') ip[i] = 4;
-            else if (nilai[i] == 'B') ip[i] = 3;
-            else if (nilai[i] == 'C') ip[i] = 2;
-            else if (nilai[i] == 'D') ip[i] = 1;
-            else ip[i] = 0;
-            hitung += ip[i];
+            cin >> nilai_abc[i];
+            cout << "Jumlah SKS : ";
+            cin >> sks[i];
+            if (nilai_abc[i] == 'A') nilai[i] = 4;
+            else if (nilai_abc[i] == 'B') nilai[i] = 3;
+            else if (nilai_abc[i] == 'C') nilai[i] = 2;
+            else if (nilai_abc[i] == 'D') nilai[i] = 1;
+            else nilai[i] = 0;
+            total_nilai += nilai[i] * sks[i];
+            total_sks += sks[i];
 
             cout << "Tambahkan nilai? [Y/T] ";
             cin >> y;
             switch (y){
-                case 'Y': isok = true; break;
-                case 'T': ipk[x] = hitung / (i+1); isok = false; continue;
-                default : isok = true; break;
+                case 'Y': tambah = true; break;
+                case 'T': ip[x] = total_nilai / total_sks; tambah = false; continue;
+                default : tambah = true; break;
             }
             i++;
-        } while(isok);
+        } while(tambah);
 
         //menampilkan data
-        cout << "IPK " << mhs[x] << " = " << ipk[x] <<endl;
+        cout << "Index Prestasi " << nama_mhs[x] << " = " << ip[x] <<endl;
 
         //reset variable
-        hitung = 0;
+        total_nilai = 0;
+        total_sks = 0;
         i = 0;
         printf("\n");
     }
