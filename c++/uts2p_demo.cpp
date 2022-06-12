@@ -10,7 +10,7 @@ int main() {
     char y;
     bool isok;
 
-    printf("Menentukan Nilai IPK\n");
+    Cout("Menentukan Nilai IPK\n");
     
     for (int x=0; x<45; x++) {
         //masukkan data
