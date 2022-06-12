@@ -19,16 +19,21 @@ int main() {
         cout << "Nama : ";
         cin >> nama_mhs[x];
         do {
+            //masukan nilai
             if(i>=10) break;
             cout << "Nilai Matakuliah ke-" << i+1 << " : ";
             cin >> nilai_abc[i];
             cout << "Jumlah SKS : ";
             cin >> sks[i];
+
+            //seleksi nilai
             if (nilai_abc[i] == 'A') nilai[i] = 4;
             else if (nilai_abc[i] == 'B') nilai[i] = 3;
             else if (nilai_abc[i] == 'C') nilai[i] = 2;
             else if (nilai_abc[i] == 'D') nilai[i] = 1;
             else nilai[i] = 0;
+
+            //hitung total_nilai dan jumlah sks
             total_nilai += nilai[i] * sks[i];
             total_sks += sks[i];
 
@@ -36,7 +41,10 @@ int main() {
             cin >> y;
             switch (y){
                 case 'Y': tambah = true; break;
-                case 'T': ip[x] = total_nilai / total_sks; tambah = false; continue;
+                case 'T': 
+                    //hitung index prestasi
+                    ip[x] = total_nilai / total_sks; 
+                    tambah = false; continue;
                 default : tambah = true; break;
             }
             i++;
