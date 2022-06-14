@@ -1,0 +1,129 @@
+body {
+    background: white;
+}
+
+.canvas {
+    background: whitesmoke;
+    border-style: solid;
+    border-color: yellowgreen;
+    width: 900px;
+    margin: 10px auto;
+}
+
+.canvas .header {
+    background: aquamarine;
+    border-style: solid;
+    border-width: thin;
+    border-color: yellowgreen;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .canvas .menu {
+    background: palegoldenrod;
+    border-style: solid;
+    border-width: thin;
+    border-color: yellowgreen;
+    padding-left: 15%;
+  }
+  
+  .canvas .menu ul {
+    text-align: center;
+    padding: 1;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .canvas .menu ul li {
+    float: left;
+    list-style-type: none;
+    width: 20%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-width: thin;
+    border-color: yellowgreen;
+  }
+  
+  .canvas .menu ul li:hover {
+    background: orange;
+  }
+
+  .canvas .content {
+    height: 460px;
+  }
+  
+  .canvas .content .kiri {
+    background: cyan;
+    border-style: solid;
+    border-width: thin;
+    border-color: yellowgreen;
+    float: left;
+    width: 24%;
+    height: 100%;
+  }
+
+  .canvas .content .kiri .cari {
+    text-align: left;
+    margin-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.canvas .content .kiri .cari input, button {
+    border-style: solid;
+    border-width: thin;
+    border-color: plum;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.canvas .content .kiri .cari button {
+  background: cornflowerblue;
+  color: white;
+}
+
+  .canvas .content .kanan {
+    background: white;
+    float: right;
+    width: 75%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .canvas .content .kanan .cetak {
+    text-align: right;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    margin-right: 5%;
+  }
+
+  .canvas .content .kanan .data {
+    float: right;
+    width: 100%;
+  }
+
+  .canvas .content .kanan table {
+    text-align: center;
+    border-style: thin;
+    border-color: blue;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .canvas .content .kanan table .title {
+    background: blue;
+    color: white;
+  }
+
+  .canvas .footer {
+    border-style: solid;
+    border-width: thin;
+    border-color: yellowgreen;
+    background: aquamarine;
+    text-align: center;
+    padding: 10px;
+  }
