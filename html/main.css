@@ -105,13 +105,43 @@ body {
     width: 100%;
   }
 
-  .canvas .content .kanan table {
+  table {
+    border: gray 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-shadow: 1px 1px 0px whitesmoke;
+    background: whitesmoke;
+  }
+
+    .canvas .content .kanan table {
     text-align: center;
     border-style: thin;
-    border-color: blue;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+
+  table thead {
+    background: orange;
+  }
+
+  table th {
+    padding: 10px 25px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+  }
+
+  table tr {
+    padding-left: 20px;
+  }
+
+  table td {
+    padding: 10px 2px;
+    background: #fafafa;
+    border-top: 1px solid white;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
   }
 
   .canvas .footer {
