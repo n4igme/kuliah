@@ -141,6 +141,12 @@ body {
     border-left: 1px solid gray;
   }
 
+  h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: blue;
+    text-align: center;
+  }
+
   .canvas .footer {
     border-style: solid;
     border-width: thin;
