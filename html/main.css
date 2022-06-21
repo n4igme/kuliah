@@ -105,6 +105,28 @@ body {
     width: 100%;
   }
 
+  .canvas .content .tkiri {
+    background: cyan;
+    float: left;
+    width: 25%;
+    height: 100%;
+  }
+
+  .canvas .content .ttengah {
+    background: cyan;
+    float: left;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+  }
+
+  .canvas .content .tkanan {
+    background: cyan;
+    float: right;
+    width: 25%;
+    height: 100%;
+  }
+
   table {
     border: gray 1px solid;
     font-family: Arial, Helvetica, sans-serif;
