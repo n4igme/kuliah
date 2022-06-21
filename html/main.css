@@ -113,7 +113,7 @@ body {
   }
 
   .canvas .content .ttengah {
-    background: cyan;
+    background: pink;
     float: left;
     text-align: center;
     width: 50%;
@@ -125,6 +125,11 @@ body {
     float: right;
     width: 25%;
     height: 100%;
+  }
+
+  .canvas .content .login {
+    text-align: center;
+    margin-top: 5%;
   }
 
   table {
