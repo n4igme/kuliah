@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman';
+}
+
+.header{
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    background-color: coral;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+.header label{
+    transform: translate(-230%, -15%);
+    position: absolute;
+    font-size: 13px;
+    margin-top: 2px;
+    margin: 10px;
+    color: blue;
+}
+
+.header input{
+    margin: 5px;
+    font-size: 12px;
+    width: 155px;
+    padding: 5px 10px;
+}
+
+.header .Login{
+    margin-top: 15px;
+    background-color: cyan;
+    padding: 1px 20px;
+    margin-right: 5px;
+    border : none ;
+}
+
+.header .Batal{
+    margin-top: 15px;
+    background-color: yellow;
+    padding: 1px 20px;
+    margin-left: 15px;
+    border : none ;
+}
+
+.container h1{
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: orangered;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer {
+    margin-top: 30px;
+    background-color: orangered;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: black;
+}

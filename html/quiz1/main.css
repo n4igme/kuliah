@@ -1,0 +1,75 @@
+body {
+    background: cornsilk;
+}
+
+h1, h2, h3 {
+    color: whitesmoke;
+}
+
+.canvas {
+    background: peachpuff;
+    width: 500px;
+    height: 300px;
+    margin: 10px auto;
+}
+
+.canvas .header {
+    background: rgb(255, 140, 0);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.canvas .content {
+    width: 500px;
+    color: blue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.canvas .content .label {
+    margin-left: 25%;
+}
+
+.canvas .content .input {
+    margin-left: 27%;
+    margin-bottom: 10px;
+}
+
+input {
+    color: grey;
+    width: 55%;
+    padding: 8px;
+    padding-left: 10px;
+}
+
+.canvas .content .button {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.canvas .content .button .login {
+    background: cyan;
+    float: left;
+    margin-left: 30%;
+    width: 18%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.canvas .content .button .batal {
+    background: yellow;
+    float: right;
+    margin-right: 30%;
+    width: 18%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.canvas .footer {
+    background: rgb(255, 140, 0);
+    text-align: center;
+}
