@@ -128,8 +128,13 @@ body {
   }
 
   .canvas .content .login {
-    text-align: center;
+    margin-right: 42%;
+    margin-left: 42%;
     margin-top: 5%;
+  }
+
+  .canvas .content .login .button {
+    text-align: right;
   }
 
   table {
