@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 int main() {
-    string nama_mhs[45];
-    char nilai_abc[10];
-    float ip[45];
+    string mhs[36];
+    char predikat[10];
+    float ip[36];
     float nilai[10];
     float sks[10];
     float total_nilai, total_sks;
@@ -13,24 +13,24 @@ int main() {
 
     printf("Menentukan Indeks Prestasi Mahasiswa\n");
     
-    for (int x=0; x<45; x++) {
+    for (int x=0; x<36; x++) {
         //masukkan data
         cout << "Masukan Data Mahasiswa ke-" << x+1 <<endl;
         cout << "Nama : ";
-        cin >> nama_mhs[x];
+        cin >> mhs[x];
         do {
             //masukan nilai
             if(i>=10) break;
             cout << "Nilai Matakuliah ke-" << i+1 << " : ";
-            cin >> nilai_abc[i];
+            cin >> predikat[i];
             cout << "Jumlah SKS : ";
             cin >> sks[i];
 
             //seleksi nilai
-            if (nilai_abc[i] == 'A') nilai[i] = 4;
-            else if (nilai_abc[i] == 'B') nilai[i] = 3;
-            else if (nilai_abc[i] == 'C') nilai[i] = 2;
-            else if (nilai_abc[i] == 'D') nilai[i] = 1;
+            if (predikat[i] == 'A' || predikat[i] == 'a') nilai[i] = 4;
+            else if (predikat[i] == 'B' || predikat[i] == 'b') nilai[i] = 3;
+            else if (predikat[i] == 'C' || predikat[i] == 'c') nilai[i] = 2;
+            else if (predikat[i] == 'D' || predikat[i] == 'd') nilai[i] = 1;
             else nilai[i] = 0;
 
             //hitung total_nilai dan jumlah sks
@@ -51,7 +51,7 @@ int main() {
         } while(tambah);
 
         //menampilkan data
-        cout << "Index Prestasi " << nama_mhs[x] << " = " << ip[x] <<endl;
+        cout << "Index Prestasi " << mhs[x] << " = " << ip[x] <<endl;
 
         //reset variable
         total_nilai = 0;
