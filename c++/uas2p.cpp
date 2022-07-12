@@ -23,7 +23,7 @@ int main(){
             case 'T': tambah = false; continue;
             default : tambah = false; continue;
         }
-    } while(tambah);
+    } while(tambah && i<100);
 
     cout<<"Total Harga = "<<total_harga;
 }
