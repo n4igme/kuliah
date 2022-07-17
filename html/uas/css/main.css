@@ -30,15 +30,35 @@ body {
 }
 
 .main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px; /* Used in this example to enable scrolling */
+    margin: 0;
+    padding: 0;
 }
 
 .main .header {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.main .tentang {
+    width: 100%;
+    height: 480px;
+    text-align: ceter;
+    background-color: #E8F9FD;
+}
+
+.main .galeri {
+    width: 100%;
+    height: 480px;
+    text-align: ceter;
+    background-color: ghostwhite;
+}
+
+.main .kontak {
+    width: 100%;
+    height: 480px;
+    text-align: ceter;
+    background-color: #FFDDEE;
 }
 
 .footer {
