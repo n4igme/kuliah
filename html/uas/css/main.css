@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: cadetblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar img {
+    float: left;
+    padding: 10px 12px;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: pink;
+    color: black;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.main .header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background: rgb(33, 38, 72);
+    color: gainsboro;
+    text-align: center;
+    padding: 10px;
+  }
