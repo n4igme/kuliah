@@ -14,6 +14,7 @@ body {
     float: left;
     padding: 10px 12px;
 }
+
 .navbar a {
     float: left;
     display: block;
@@ -48,8 +49,7 @@ body {
 }
 
 .tentang .konten {
-    padding-left: 5%;
-    padding-top: 5%;
+    padding: 5%;
 }
 
 .tentang .konten img {
@@ -116,9 +116,29 @@ body {
 
 .main .kontak {
     width: 100%;
-    height: 480px;
+    height: 320px;
     text-align: ceter;
     background-color: #FFDDEE;
+}
+
+.kontak .konten {
+    padding: 5%;
+}
+
+.konten .info {
+    float: left;
+    width: 25%;
+    padding-left: 10%;
+}
+
+.konten .logo {
+    float: right;
+    width: 25%;
+}
+
+.konten .logo img {
+    border-style: solid;
+    border-color: yellowgreen;
 }
 
 .footer {
