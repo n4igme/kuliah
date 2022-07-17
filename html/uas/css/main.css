@@ -47,11 +47,71 @@ body {
     background-color: #E8F9FD;
 }
 
+.tentang .konten {
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+.tentang .konten img {
+    float: left;
+    width: 25%;
+    margin-left: 10%;
+    border-style: solid;
+    border-color: yellowgreen;
+}
+
+.tentang .konten h1 {
+    float: left;
+    width: 53%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #205375;
+}
+
+.tentang .konten p {
+    float: left;
+    width: 53%;
+    margin-top: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #205375;
+    font-size: large;
+}
+
 .main .galeri {
     width: 100%;
     height: 480px;
     text-align: ceter;
     background-color: ghostwhite;
+}
+
+.galeri .foto {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    height: 120px;
+}
+  
+.galeri .foto:hover {
+    border: 1px solid #777;
+  }
+  
+.galeri .foto img {
+    width: 100%;
+    height: 100%;
+  }
+  
+.galeri .desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.galeri .konten {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    width: 80%;
 }
 
 .main .kontak {
